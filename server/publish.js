@@ -1,0 +1,3 @@
+/*
+All the published collection
+*/

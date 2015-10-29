@@ -1,0 +1,17 @@
+template(name="navbar")
+    .navbar.navbar-default.navbar-static-top(role='navigation')
+        .container
+            .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href='#') Brand #{brand}
+            .navbar-collapse.collapse
+                ul.nav.navbar-nav
+                    li.active
+                        //-a(href='#{key}') #{val}
+                        a(href="{{pathFor route='contactsList'}}") Home
+                    li
+                        a(href="{{pathFor route='mailingListsList'}}") About
